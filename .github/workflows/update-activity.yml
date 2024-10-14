@@ -18,4 +18,4 @@ jobs:
           GITHUB_USERNAME: "CharonTung"
           GITHUB_TOKEN: ${{ secrets.token}} # Ensure this matches the secret name in repository settings
           TARGET_REPOS: '[CharonTung/DevOps]'
-          EVEN_LIMIT: 100
+          EVENT_LIMIT: 100
