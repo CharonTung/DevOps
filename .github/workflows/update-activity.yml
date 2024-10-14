@@ -3,8 +3,8 @@
 name: Update GitHub Activity
 
 on:
-  schedule:
-    - cron: "*/30 * * * *" # Runs every 30 minutes
+  #schedule:
+  #  - cron: "*/30 * * * *" # Runs every 30 minutes
   workflow_dispatch: # Allows manual triggering
 
 jobs:
@@ -17,3 +17,5 @@ jobs:
         with:
           GITHUB_USERNAME: "CharonTung"
           GITHUB_TOKEN: ${{ secrets.token}} # Ensure this matches the secret name in repository settings
+          TARGET_REPOS: '[CharonTung/DevOps]'
+          EVEN_LIMIT: 100
