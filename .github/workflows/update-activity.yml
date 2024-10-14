@@ -17,3 +17,4 @@ jobs:
         with:
           GITHUB_USERNAME: "CharonTung"
           GITHUB_TOKEN: ${{ secrets.token}} # Ensure this matches the secret name in repository settings
+          EVENT_LIMIT: 100
